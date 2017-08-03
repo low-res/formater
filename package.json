@@ -1,0 +1,29 @@
+{
+  "name": "formater",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/low-res/formater.git"
+  },
+  "license": "MIT",
+  "format": "amd",
+  "jspm": {
+    "main": "formater",
+    "directories": {
+      "lib": "src",
+      "test": "tests"
+    },
+    "dependencies": {
+      "lodash": "npm:lodash@^4.17.4",
+      "moment": "npm:moment@^2.18.1",
+      "numeral": "npm:numeral@^2.0.6"
+    },
+    "devDependencies": {
+      "jasmine-core": "npm:jasmine-core@^2.7.0",
+      "karma": "npm:karma@^1.7.0",
+      "karma-chrome-launcher": "npm:karma-chrome-launcher@^2.2.0",
+      "karma-jasmine": "npm:karma-jasmine@^1.1.0",
+      "karma-systemjs": "npm:karma-systemjs@^0.16.0"
+    }
+  }
+}
