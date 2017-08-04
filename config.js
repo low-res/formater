@@ -3,7 +3,7 @@ System.config({
   defaultJSExtensions: true,
   transpiler: false,
   paths: {
-    "systemjs": "node_modules/systemjs/dist/system.js",
+    "systemjs": "jspm_packages/system.js",
     "github:*": "jspm_packages/github/*",
     "npm:*": "jspm_packages/npm/*"
   },
@@ -64,7 +64,7 @@ System.config({
       "process": "npm:process@0.11.10"
     },
     "github:jspm/nodelibs-punycode@0.1.0": {
-      "punycode": "npm:punycode@1.4.1"
+      "punycode": "npm:punycode@1.3.2"
     },
     "github:jspm/nodelibs-querystring@0.1.0": {
       "querystring": "npm:querystring@0.2.0"
@@ -1379,7 +1379,7 @@ System.config({
       "ansi-regex": "npm:ansi-regex@2.1.1"
     },
     "npm:tar-pack@3.4.0": {
-      "debug": "npm:debug@2.6.7",
+      "debug": "npm:debug@2.6.8",
       "fstream": "npm:fstream@1.0.11",
       "fstream-ignore": "npm:fstream-ignore@1.0.5",
       "once": "npm:once@1.4.0",
