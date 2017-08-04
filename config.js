@@ -336,10 +336,10 @@ System.config({
       "stream": "github:jspm/nodelibs-stream@0.1.0",
       "util": "github:jspm/nodelibs-util@0.1.0"
     },
-    "npm:connect@3.6.2": {
-      "debug": "npm:debug@2.6.7",
+    "npm:connect@3.6.3": {
+      "debug": "npm:debug@2.6.8",
       "events": "github:jspm/nodelibs-events@0.1.1",
-      "finalhandler": "npm:finalhandler@1.0.3",
+      "finalhandler": "npm:finalhandler@1.0.4",
       "http": "github:jspm/nodelibs-http@1.7.1",
       "parseurl": "npm:parseurl@1.3.1",
       "process": "github:jspm/nodelibs-process@0.1.2",
@@ -411,6 +411,9 @@ System.config({
       "ms": "npm:ms@0.7.2"
     },
     "npm:debug@2.6.7": {
+      "ms": "npm:ms@2.0.0"
+    },
+    "npm:debug@2.6.8": {
       "ms": "npm:ms@2.0.0"
     },
     "npm:deep-extend@0.4.2": {
@@ -547,9 +550,9 @@ System.config({
       "repeat-element": "npm:repeat-element@1.1.2",
       "repeat-string": "npm:repeat-string@1.6.1"
     },
-    "npm:finalhandler@1.0.3": {
+    "npm:finalhandler@1.0.4": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.1",
-      "debug": "npm:debug@2.6.7",
+      "debug": "npm:debug@2.6.8",
       "encodeurl": "npm:encodeurl@1.0.1",
       "escape-html": "npm:escape-html@1.0.3",
       "on-finished": "npm:on-finished@2.3.0",
@@ -856,7 +859,7 @@ System.config({
       "chokidar": "npm:chokidar@1.7.0",
       "colors": "npm:colors@1.1.2",
       "combine-lists": "npm:combine-lists@1.0.1",
-      "connect": "npm:connect@3.6.2",
+      "connect": "npm:connect@3.6.3",
       "core-js": "npm:core-js@2.4.1",
       "crypto": "github:jspm/nodelibs-crypto@0.1.0",
       "di": "npm:di@0.0.1",
