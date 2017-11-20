@@ -75,7 +75,8 @@ define([
             key:"date",
             processor : function( v, loc ) {
                 var dateFormat = loc == "de" ? 'DD.MM.YYYY' : 'YYYY-MM-DD';
-                return moment(v).format( dateFormat );
+                var m = moment(v);
+                return m.isValid() ? m.format( dateFormat ) : "" ;
             }
         },
 
