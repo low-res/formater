@@ -104,7 +104,7 @@ define([
     }
 
 
-    p._findFormat = function(){
+    p._findFormat = function( formatId ){
         var format = null;
         format = _.find(this.customFormats, {key:formatId});
         if(!format) format = _.find(this.defaultFormats, {key:formatId});
