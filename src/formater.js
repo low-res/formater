@@ -62,6 +62,10 @@ define([
     }
 
 
+    p.hasFormat = function( formatId ) {
+        return this._findFormat( formatId );
+    }
+
     p.setLocale = function( locale ) {
         this.locale = locale;
     }
@@ -86,18 +90,24 @@ define([
     //      IMPLEMENTATION DETAIL
 
     p._getFormat = function (formatId) {
-        var format;
-        format = _.find(this.customFormats, {key:formatId});
-        if(!format) format = _.find(this.defaultFormats, {key:formatId});
+        var format = this._findFormat( formatId );
         if(!format) {
             console.log( "No formatdefinition found for: "+formatId );
             format = { key:"null", processor:this.nullProcessor };
         }
 
         if(!_.isFunction(format.processor)) {
-            throw "Formatdefinition MUST have prperty 'processor' of type function !";
+            throw "Formatdefinition MUST have property 'processor' of type function !";
         }
 
+        return format;
+    }
+
+
+    p._findFormat = function(){
+        var format = null;
+        format = _.find(this.customFormats, {key:formatId});
+        if(!format) format = _.find(this.defaultFormats, {key:formatId});
         return format;
     }
 
