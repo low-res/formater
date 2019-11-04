@@ -29,12 +29,13 @@ define([
      *
      * @param {*} value
      * @param {string} formatId
+     * @param {*} context - can be any additional information that should be passed to the processor
      * @return {string} formated value
      * @private
      */
-    p.formatValueToType = function ( value, formatId) {
+    p.formatValueToType = function ( value, formatId, context) {
         var format = this._getFormat( formatId );
-        var result = format.processor.call(this, value, this.locale);
+        var result = format.processor.call(this, value, this.locale, context);
         return result;
     }
 
